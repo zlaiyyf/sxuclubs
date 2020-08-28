@@ -1,5 +1,6 @@
 
 
+	<add-tips name="山大clubs" duration="10" custom/>
 
 <swiper class="screen-swiper round-dot" indicator-dots="true" circular="true" autoplay="true" interval="5000" duration="500">
 	<swiper-item wx:for="{{2}}" wx:key="index" bindtap="to">

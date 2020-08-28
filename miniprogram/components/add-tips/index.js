@@ -51,7 +51,6 @@ Component({
   },
   methods: {
     hidden: function() {
-      console.log("csscs")
       wx.setStorageSync(STORAGE_KEY, true)
       this.shrink()
     },

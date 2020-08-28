@@ -72,7 +72,7 @@
 
 	<view class="cu-form-group align-start solids-bottom">
 		<!-- <view class="title">介绍:</view> -->
-		<textarea value="{{introduce}}" maxlength="-1" name="textarea" placeholder="介绍你的社团吧" auto-height="true"></textarea>
+		<textarea  value="{{introduce}}" maxlength="-1" name="textarea" placeholder="介绍你的社团吧" auto-height="true"></textarea>
 	</view>
 	<view class="flex solid-bottom padding justify-end">
 		<button disabled="{{disabled}}"form-type="submit" class="cu-btn round bg-blue">确定</button>

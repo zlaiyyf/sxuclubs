@@ -1,4 +1,6 @@
 {
-  "usingComponents": {},
+	"usingComponents": {
+		"add-tips": "/components/add-tips/index"
+	},
   "navigationStyle":"custom"
 }

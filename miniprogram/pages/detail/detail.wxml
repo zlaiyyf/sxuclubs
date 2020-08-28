@@ -1,5 +1,3 @@
-<add-tips name="示例"/>
-
 
 <view class="cu-card dynamic no-card">
 	<view class="cu-item shadow">
@@ -17,7 +15,7 @@
 		</view>
 		<!-- 介绍 -->
 		<view class="my-text-content">
-			{{club.introduce}}
+			<text>{{club.introduce}}</text>
 		</view>
 
 

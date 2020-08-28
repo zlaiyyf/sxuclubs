@@ -7,7 +7,8 @@ Page({
    */
   data: {
     uselist: [],
-    applytext: ""
+    applytext: "",
+    auth:0
 
   },
 
@@ -55,7 +56,8 @@ Page({
 
       if (uerlist[i]._id ==id) {
         this.setData({
-          applytext: uerlist[i].applytext
+          applytext: uerlist[i].applytext,
+          auth:uerlist[i].applyauth
         })
         break
       }

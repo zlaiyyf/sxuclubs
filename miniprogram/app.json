@@ -38,7 +38,6 @@
   },
   "usingComponents": {
     "cu-custom": "/colorui/components/cu-custom",
-    "add-tips":"/components/add-tips/index",
     "sort":"/components/sort"
   },
   "sitemapLocation": "sitemap.json"
