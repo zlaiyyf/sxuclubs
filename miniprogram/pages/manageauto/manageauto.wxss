@@ -1,0 +1,4 @@
+/* pages/manageauto/manageauto.wxss */
+page{
+  background-color: white;
+}

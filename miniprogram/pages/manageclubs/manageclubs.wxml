@@ -1,0 +1,30 @@
+<!--pages/manageclubs/manageclubs.wxml-->
+<view class="cu-bar bg-white solid-bottom ">
+	<view class="action">
+		<text class="cuIcon-title text-orange "></text> 左滑进行删除和修改
+	</view>
+	<view class="action" bindtap="add">
+		添加<text class="cuIcon-roundadd text-orange "></text>
+	</view>
+</view>
+<view class="cu-list menu-avatar">
+	<view class="cu-item {{modalName=='move-box-'+ index?'move-cur':''}}" wx:for="{{list}}" wx:key="index" bindtouchstart="ListTouchStart" bindtouchmove="ListTouchMove" bindtouchend="ListTouchEnd" data-target="move-box-{{index}}">
+		<!-- <view class="cu-avatar round lg" style="background-image:{{item.avatar}}"></view> -->
+		<image class="cu-avatar round lg" src="{{item.avatar}}"></image>
+    <view class="content">
+			<view class="text-grey">{{item.name}}</view>
+			<view class="text-gray text-sm flex">
+      <sort sort="{{item.type}}"></sort>
+
+			</view>
+		</view>
+		<!-- <view class="action">
+        <view class="text-grey text-xs">22:20</view>
+        <view class="cu-tag round bg-grey sm">5</view>
+      </view> -->
+		<view class="move">
+			<view class="bg-grey" data-id="{{item._id}}"  bindtap="revise">修改</view>
+			<view class="bg-red" data-id="{{item._id}}" data-avatar="{{item.avatar}}" bindtap="move">删除</view>
+		</view>
+	</view>
+</view>

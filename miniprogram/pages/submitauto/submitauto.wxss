@@ -1,0 +1,4 @@
+/* pages/submitauto/submitauto.wxss */
+page{
+  background-color: white;
+}

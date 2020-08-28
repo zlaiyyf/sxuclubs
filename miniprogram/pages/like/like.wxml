@@ -1,0 +1,22 @@
+<!--pages/like/like.wxml-->
+  <view class="cu-list menu-avatar">
+    <view class="cu-item solids bg-white"  wx:for = "{{clubs}}" data-id="{{item._id}}" bind:tap="NavigateTo" wx:key="index">
+      <!-- <view class="cu-avatar round lg" style="background-image:url(https://ossweb-img.qq.com/images/lol/web201310/skin/big10001.jpg);"></view> -->
+      <image class="cu-avatar round lg" src="{{item.avatar}}"></image>
+      <view class="content">
+        <view class="text-grey">{{item.name}}</view>
+				<view class="text-gray text-sm flex">
+        <sort sort="{{item.type}}"></sort>
+
+
+						</view>
+      </view>
+      <view class="action">
+        <!-- <view class="text-grey text-xs">22:20</view> -->
+        <view class="cuIcon-right text-black"></view>
+      </view>
+    </view>
+   <view class="padding solids bg-white text-center"  wx:if="{{clubs.length==0}}" >
+    你还没有收藏社团哦，去选自己喜欢的社团吧
+    </view>
+  </view>

@@ -1,0 +1,10 @@
+/* pages/like/like.wxss */
+page{
+  background-color: white;
+}
+/* .cu-list.menu-avatar>.cu-item .content {
+	position: absolute;
+	left: 146rpx;
+	width: 600rpx;
+	line-height: 1.6em;
+} */

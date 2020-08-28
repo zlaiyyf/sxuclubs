@@ -1,0 +1,82 @@
+<!--pages/submitclubs/submitclubs.wxml-->
+<view class="flex justify-center">
+	<text class="text-red">社团编辑</text>
+
+</view>
+<form bindsubmit="submit">
+	<view class="cu-form-group margin-top">
+		<view class="title">头像：</view>
+		<view bindtap="ChooseImage" wx:if="{{!FilePaths}}" class="cu-avatar radius bg-gray">
+			<text class="cuIcon-cameraadd"></text>
+
+		</view>
+		<view class="" wx:if="{{FilePaths}}" bindtap="ViewImage">
+			<view class="cu-avatar round lg" style="background-image:url({{FilePaths}});">
+				<view class="cu-tag badge" catchtap="DelImg"> <text class="cuIcon-close"></text>
+				</view>
+			</view>
+		</view>
+	</view>
+	<view class="cu-form-group">
+		<view class="title">社团名称：</view>
+		<input value="{{name}}" name="name"></input>
+	</view>
+	<view class="flex justify-center">
+		<text class="text-red">社团分类（最多四个）</text>
+
+	</view>
+	<checkbox-group name="sort" bindchange="checkbox">
+		<view class="cu-form-group">
+			<view class="title">大东关</view>
+			<checkbox class="round" value="1" checked="{{sort[1]}}"></checkbox>
+			<view class="title"> <text decode="{{true}}">坞&emsp;城</text></view>
+			<checkbox value="2" class="round" checked="{{sort[2]}}"></checkbox>
+		</view>
+		<view class="cu-form-group">
+			<view space="emsp" class="title"> <text decode="{{true}}">院&emsp;级
+			</text></view>
+			<checkbox value="3" class="round" checked="{{sort[3]}}"></checkbox>
+			<view class="title">
+				<text decode="{{true}}">校&emsp;级
+			</text>
+			</view>
+			<checkbox value="4" class="round" checked="{{sort[4]}}"></checkbox>
+		</view>
+		<view class="cu-form-group">
+			<view class="title">学术类</view>
+			<checkbox value="5" class="round" checked="{{sort[5]}}"></checkbox>
+			<view class="title">艺术类</view>
+			<checkbox value="6" class="round" checked="{{sort[6]}}"></checkbox>
+		</view>
+		<view class="cu-form-group">
+			<view class="title">公益类</view>
+			<checkbox value="7" class="round" checked="{{sort[7]}}"></checkbox>
+			<view class="title">技能类</view>
+			<checkbox value="8" class="round" checked="{{sort[8]}}" ></checkbox>
+		</view>
+		<view class="cu-form-group">
+			<view class="title">娱乐类</view>
+			<checkbox value="9" class="round" checked="{{sort[9]}}"></checkbox>
+			<view class="title">科技类</view>
+			<checkbox value="10" class="round" checked="{{sort[10]}}"></checkbox>
+			<view class="title">体育类</view>
+			<checkbox value="11" class="round" checked="{{sort[11]}}"></checkbox>
+		</view>
+		<!-- </checkbox-group> -->
+	</checkbox-group>
+	<view class="cu-form-group">
+		<view class="title" >qq群：</view>
+		<input value="{{qq}} "type="number" name="qq"></input>
+
+	</view>
+
+	<view class="cu-form-group align-start solids-bottom">
+		<!-- <view class="title">介绍:</view> -->
+		<textarea value="{{introduce}}" maxlength="-1" name="textarea" placeholder="介绍你的社团吧" auto-height="true"></textarea>
+	</view>
+	<view class="flex solid-bottom padding justify-end">
+		<button disabled="{{disabled}}"form-type="submit" class="cu-btn round bg-blue">确定</button>
+
+	</view>
+
+</form>

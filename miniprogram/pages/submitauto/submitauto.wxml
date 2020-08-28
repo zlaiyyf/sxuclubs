@@ -1,0 +1,29 @@
+<!--pages/submitauto/submitauto.wxml-->
+
+    <view class="flex justify-center">
+        <text class="text-red ">用于社团负责人申请 其他人勿申请</text>
+
+    </view>
+  <form bindsubmit="submit">
+	<view class="cu-form-group margin-top ">
+		<view class="title">申请的权限</view>
+		<picker name="picker" bindchange="PickerChange" value="{{index}}" range="{{picker}}">
+			<view class="picker">
+				{{picker[index]}}
+			</view>
+		</picker>
+	</view>
+
+	<view class="cu-form-group align-start solids-bottom">
+		<view class="title">理由</view>
+		<textarea maxlength="20" 
+name="textarea"
+    placeholder="请输入你管理的社团或者其他的原因"
+    auto-height="true"></textarea>
+	</view>
+    <view class="flex solid-bottom padding justify-end">
+    <button form-type="submit" class="cu-btn round bg-blue">确定</button>
+
+    </view>
+
+</form>

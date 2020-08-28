@@ -1,0 +1,16 @@
+<!--components/sort.wxml-->
+<!-- <text>components/sort.wxml</text> -->
+
+<block wx:for ="{{sort}}" wx:key="index">
+	<view wx:if="{{item==1}}" class="cu-tag round bg-orange sm">大东关</view>
+	<view wx:if="{{item==2}}" class="cu-tag round bg-orange sm">坞 城</view>
+	<view wx:if="{{item==3}}" class="cu-tag round bg-orange sm">院 级</view>
+	<view wx:if="{{item==4}}" class="cu-tag round bg-orange sm">校 级</view>
+	<view wx:if="{{item==5}}" class="cu-tag round bg-orange sm">学术类</view>
+	<view wx:if="{{item==6}}" class="cu-tag round bg-orange sm">艺术类</view>
+	<view wx:if="{{item==7}}" class="cu-tag round bg-orange sm">公益类</view>
+	<view wx:if="{{item==8}}" class="cu-tag round bg-orange sm">技能类</view>
+	<view wx:if="{{item==9}}" class="cu-tag round bg-orange sm">娱乐类</view>
+	<view wx:if="{{item==10}}" class="cu-tag round bg-orange sm">科技类</view>
+	<view wx:if="{{item==11}}" class="cu-tag round bg-orange sm">体育类</view>
+</block>

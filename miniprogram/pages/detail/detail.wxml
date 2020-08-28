@@ -1,0 +1,49 @@
+<add-tips name="示例"/>
+
+
+<view class="cu-card dynamic no-card">
+	<view class="cu-item shadow">
+		<view class="cu-list menu-avatar solids-bottom">
+			<view class="cu-item">
+				<image class="cu-avatar round lg" src="{{club.avatar}}"></image>
+				<view class="content flex-sub ">
+					<view class="text-black text-bold">{{club.name}}</view>
+					<view class="text-gray text-sm flex justify-start">
+						qq群：
+						<text selectable='true'>{{club.qq}}</text>
+					</view>
+				</view>
+			</view>
+		</view>
+		<!-- 介绍 -->
+		<view class="my-text-content">
+			{{club.introduce}}
+		</view>
+
+
+	</view>
+</view>
+
+<view class="cu-bar  bg-white "></view>
+
+<view class="cu-bar foot bg-white " style="bottom:{{InputBottom}}px">
+
+	<view class="flex-sub radius" bind:tap="like">
+		<view class='text-center'>
+			<text class="cuIcon-newshotfill  text-cyan"></text>
+		</view>
+		<view class=" text-center">
+			<text class=" xl text-cyan ">{{like?"取消收藏":"收藏"}}</text>
+		</view>
+	</view>
+	<button class=" flex-sub radius cu-btn block bg-white lg " open-type="share">
+		<view class="flex-sub text-df ">
+			<view class='text-center ' style="margin-bottom: 10rpx">
+				<text class="cuIcon-share  text-cyan "></text>
+			</view>
+			<view class="text-center">
+				<text class="text-cyan">分享</text>
+			</view>
+		</view>
+	</button>
+</view>

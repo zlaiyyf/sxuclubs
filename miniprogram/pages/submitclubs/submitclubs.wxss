@@ -1,0 +1,4 @@
+/* pages/submitclubs/submitclubs.wxss */
+page{
+  background-color: white;
+}

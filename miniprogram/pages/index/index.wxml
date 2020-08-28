@@ -1,0 +1,41 @@
+
+
+
+<swiper class="screen-swiper round-dot" indicator-dots="true" circular="true" autoplay="true" interval="5000" duration="500">
+	<swiper-item wx:for="{{2}}" wx:key="index" bindtap="to">
+		<image src="/images/index{{item}}.png" mode='aspectFill'></image>
+	</swiper-item>
+</swiper>
+
+
+<view class="VerticalBox">
+	<!-- 左边 -->
+	<scroll-view class="VerticalNav nav" scroll-y scroll-with-animation scroll-top="{{VerticalNavTop}}" style="height:calc(100vh - 375rpx)">
+		<view class="cu-item {{index==TabCur?'text-green cur':''}}" wx:for="{{list}}" wx:key="id" bindtap='tabSelect' data-id="{{index}}">
+			{{item.name}}
+		</view>
+	</scroll-view>
+
+	<!-- 右边 -->
+	<scroll-view class="VerticalMain" scroll-y scroll-with-animation style="height:calc(100vh - 375rpx)" scroll-into-view="main-{{MainCur}}" bindscroll="VerticalMain">
+		<view class="padding-top padding-lr" wx:for="{{list}}" wx:key="id" id="main-{{index}}">
+			<view class='cu-bar solid-bottom bg-white'>
+				<view class='action'>
+					<text class='cuIcon-title text-green'></text> {{item.name}} </view>
+			</view>
+			<view class="cu-list menu-avatar">
+				<view class="cu-item" wx:for="{{item.clubs}}" wx:key="id" data-id="{{item._id}}" bindtap="NavigateTo">
+					<image class="cu-avatar round lg" src="{{item.avatar}}"></image>
+					<view class="mycontent">
+						<view class="text-grey text-cut">{{item.name}}</view>
+						<view class="text-gray text-sm flex  text-cut">
+							<sort sort="{{item.type}}"></sort>
+						</view>
+					</view>
+				</view>
+
+			</view>
+
+		</view>
+	</scroll-view>
+</view>

@@ -1,0 +1,45 @@
+{
+  "pages": [
+
+    "pages/index/index",
+    "pages/my/my",
+    "pages/submitclubs/submitclubs",
+    "pages/detail/detail",
+    "pages/like/like",
+    "pages/submitauto/submitauto",
+ 
+    "pages/manageclubs/manageclubs",
+    "pages/manageauto/manageauto",
+    "pages/about/about"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "山大Clubs",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "selectedColor": "#1cbbb4",
+    "list": [{
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "images/tabbar/index.png",
+        "selectedIconPath": "images/tabbar/index1.png"
+      },
+    
+      {
+        "pagePath": "pages/my/my",
+        "text": "我的",
+        "iconPath": "images/tabbar/my.png",
+        "selectedIconPath": "images/tabbar/my1.png"
+      }
+    ]
+  },
+  "usingComponents": {
+    "cu-custom": "/colorui/components/cu-custom",
+    "add-tips":"/components/add-tips/index",
+    "sort":"/components/sort"
+  },
+  "sitemapLocation": "sitemap.json"
+}

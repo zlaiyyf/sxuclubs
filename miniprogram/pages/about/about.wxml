@@ -1,0 +1,17 @@
+<!--pages/about/about.wxml-->
+<view class='margin-xl bg-white padding-xl radius shadow-lg'>
+	<view class='text-center margin-bottom text-lg  text-grey'>关于山大clubs</view>
+	<view class='text-content'>
+		<view>Hi！同学~欢迎使用山大clubs！</view>
+
+		<view class='margin-top-sm'>
+    该项目解决的是学校社团信息分散，以及单个社团宣传人员有限，
+    使得一些社团获取不到更多的曝光，
+    为此将各个学校社团整合在一起，
+    将每个社团的每一次社团宣传充分发挥效果，
+    让萌新快速了解和选择自己合适的社团</view>
+		<view class='margin-top-sm'>更多有趣和有用的校园功能，请微信搜索【龙城山大】</view>
+
+		<view class='margin-top-sm'>更多功能敬请期待！</view>
+	</view>
+</view>

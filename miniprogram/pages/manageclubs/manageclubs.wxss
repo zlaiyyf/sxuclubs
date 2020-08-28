@@ -1,0 +1,4 @@
+/* pages/manageclubs/manageclubs.wxss */
+page{
+  background-color: white;
+}

@@ -1,0 +1,8 @@
+{
+  "usingComponents": {},
+  "backgroundColor": "#ffffff",
+  "backgroundTextStyle": "light",
+  "navigationBarBackgroundColor": "#ffffff",
+  "navigationBarTitleText": "社团详情",
+  "navigationBarTextStyle": "black"
+}

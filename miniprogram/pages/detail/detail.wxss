@@ -1,0 +1,11 @@
+/* pages/detail/detail.wxss */
+page{
+  background-color:white;
+}
+
+.cu-card.dynamic>.cu-item>.my-text-content {
+	padding: 0 30rpx 0;
+	overflow: hidden;
+	font-size: 30rpx;
+	margin-bottom: 20rpx;
+}

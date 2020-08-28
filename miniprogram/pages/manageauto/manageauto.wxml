@@ -1,0 +1,32 @@
+<!--pages/manageauto/manageauto.wxml-->
+<view class="cu-bar bg-white" wx:for="{{uselist}}" wx:key="index">
+  <view class="action" style="width:70%" >
+    <text class="cuIcon-title text-orange "></text> <text class="text-cut">{{item.applytext}}</text>
+  </view>
+  <view class="action">
+    <button class="cu-btn bg-green shadow" bindtap="showModal" data-target="DialogModal1" data-id="{{item._id}}">处理</button>
+    <!-- <button class="cu-btn bg-blue shadow margin-left" bindtap="showModal" data-target="DialogModal2">Dialog</button> -->
+  </view>
+</view>
+<view class="cu-modal {{modalName=='DialogModal1'?'show':''}}">
+  <view class="cu-dialog">
+    <view class="cu-bar bg-white justify-end">
+      <view class="content">申请理由</view>
+      <view class="action" bindtap="hideModal">
+        <text class="cuIcon-close text-red"></text>
+      </view>
+    </view>
+    <view class="padding-xl ">
+     <text class="text-left">{{applytext}}</text>
+    </view>
+        <!-- <view class="text-content">
+   {{applytext}}
+    </view> -->
+    <view class="cu-bar bg-white justify-end">
+      <view class="action">
+        <button class="cu-btn line-green text-green" bindtap="refuse" data-id="{{nowid}}">拒绝</button>
+        <button class="cu-btn bg-green margin-left" bindtap="agree" data-id="{{nowid}}">同意</button>
+      </view>
+    </view>
+  </view>
+</view>
