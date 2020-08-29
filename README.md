@@ -53,9 +53,8 @@
 
 - [ColorUI](https://github.com/weilanwl/ColorUI)
 - [Mini-add-tips](https://github.com/MakerGYT/mini-add-tips)
-- 
 - [云开发](https://developers.weixin.qq.com/miniprogram/dev/wxcloud/basis/getting-started.html)
-- 
+
 ## 参考文档
 
 - [云开发文档](https://developers.weixin.qq.com/miniprogram/dev/wxcloud/basis/getting-started.html)
